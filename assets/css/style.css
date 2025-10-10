@@ -881,7 +881,6 @@ header.active .intro:is(:visible); .checkVisibility
   pointer-events: none;
   user-select: none;
   z-index: -1;
-  mask-image: linear-gradient(to right, rgba(0.984, 0.949, 242/256, 1.0) 50%, transparent 0%);
 }
 
 .intro .slider-item.active .slider-bg {
