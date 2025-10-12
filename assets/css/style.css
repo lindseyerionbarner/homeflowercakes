@@ -1181,7 +1181,7 @@ header.active .intro:is(:visible); .checkVisibility
 .column {
     flex: 33%;
     padding: 0 4px;
-    max-width: 33%;
+    max-width: 33.33%;
     font-family: var(--fontFamily-forum);
     color: var(--smoky-black-3);
     line-height: 20px;
