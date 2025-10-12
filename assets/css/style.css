@@ -866,14 +866,12 @@ header.active .intro:is(:visible); .checkVisibility
   z-index: 1;
 }
 
-/*.intro .slider-item.active {
+.intro .slider-item.active {
   opacity: 1;
   visibility: visible;
-}*/
+}
 
 .intro .slider-bg {
-    opacity: 1;
-  visibility: visible;
   position: absolute;
   top: 0;
   left: 0;
@@ -883,12 +881,11 @@ header.active .intro:is(:visible); .checkVisibility
   pointer-events: none;
   user-select: none;
   z-index: -1;
-animation: smoothScale 15s linear forwards; /* init 7s*/
 }
 
-/*.intro .slider-item.active .slider-bg {
-  animation: smoothScale 15s linear forwards;*/ /* init 7s*/
-/*}*/
+.intro .slider-item.active .slider-bg {
+  animation: smoothScale 15s linear forwards; /* init 7s */
+}
 
 @keyframes smoothScale {
   0% { transform: scale(1); }
