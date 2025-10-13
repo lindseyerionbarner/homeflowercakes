@@ -487,6 +487,7 @@ body.nav-active { overflow: hidden; }
 .hover\:shine:is(:hover, :focus-within)::after {
   transform: skewX(-0.08turn) translateX(275%);
   transition: var(--transition-3);
+  opacity: 50%;
 }
 
 .img-holder {
@@ -1026,9 +1027,7 @@ header.active .intro:is(:visible); .checkVisibility
 /* This is the image transformation when hovering*/
 .service-card:is(:hover, :focus-within) .card-banner {
     transform: scale(1.05);
-
 }
-
 .service .card-title { margin-block-end: 12px; }
 
 .service .label-1 {
@@ -1200,6 +1199,8 @@ header.active .intro:is(:visible); .checkVisibility
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -1217,6 +1218,7 @@ header.active .intro:is(:visible); .checkVisibility
     width: 33vw;
     vertical-align: middle;
 }
+
 
 /*-----------------------------------*\
   #PRICING
