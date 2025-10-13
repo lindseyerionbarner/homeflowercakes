@@ -209,6 +209,10 @@ body.nav-active { overflow: hidden; }
   line-height: var(--lineHeight-2);
 }
 
+.title-4{
+    color: var(--smoky-black-2);
+}
+
 .headline-1 {
     color: var(--smoky-black-1);
     font-family: 'WhisperingSignature';
@@ -376,6 +380,7 @@ body.nav-active { overflow: hidden; }
   padding: 12px 45px; /* original 12px 45px*/
   overflow: hidden;
   z-index: 1;
+
 }
 
 .btn::before {
@@ -415,12 +420,27 @@ body.nav-active { overflow: hidden; }
 .btn-secondary {
   background-color: #f3aac0;
   color: var(--black);
-  justify-items: center;
+  margin: 0 auto;
+}
+
+.btn-tertiary {
+    background-color: var(--gold-crayola);
+    color: var(--black);
+    margin: 0 auto;
 }
 
 .btn-secondary::before { background-color: var(--smoky-black-1); }
 
 .btn-secondary .text-2 { color: var(--white); }
+
+.btn-tertiary::before {
+    background-color: var(--smoky-black-1);
+}
+
+.btn-tertiary .text-2 {
+    color: var(--white);
+}
+
 
 .has-before,
 .has-after {
@@ -452,6 +472,7 @@ body.nav-active { overflow: hidden; }
 
 .hover\:shine { position: relative; }
 
+/* I think this is the shiny thing that goes across the image*/
 .hover\:shine::after {
   content: "";
   position: absolute;
@@ -1002,7 +1023,11 @@ header.active .intro:is(:visible); .checkVisibility
 
 .service-card .card-banner { transition: var(--transition-2); }
 
-.service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05); }
+/* This is the image transformation when hovering*/
+.service-card:is(:hover, :focus-within) .card-banner {
+    transform: scale(1.05);
+
+}
 
 .service .card-title { margin-block-end: 12px; }
 

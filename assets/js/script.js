@@ -86,8 +86,8 @@ window.addEventListener("scroll", function () {
 
 const heroSlider = document.querySelector("[data-hero-slider]");
 const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
-const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
-const heroSliderNextBtn = document.querySelector("[data-next-btn]");
+//const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
+//const heroSliderNextBtn = document.querySelector("[data-next-btn]");
 
 let currentSlidePos = 0;
 let lastActiveSliderItem = heroSliderItems[0];
@@ -108,7 +108,7 @@ const slideNext = function () {
   updateSliderPos();
 }
 
-heroSliderNextBtn.addEventListener("click", slideNext);
+//heroSliderNextBtn.addEventListener("click", slideNext);
 
 const slidePrev = function () {
   if (currentSlidePos <= 0) {
@@ -120,7 +120,7 @@ const slidePrev = function () {
   updateSliderPos();
 }
 
-heroSliderPrevBtn.addEventListener("click", slidePrev);
+//heroSliderPrevBtn.addEventListener("click", slidePrev);
 
 /**
  * auto slide
@@ -134,13 +134,13 @@ const autoSlide = function () {
   }, 7000);
 }
 
-addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
-  clearInterval(autoSlideInterval);
-});
+//addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
+//  clearInterval(autoSlideInterval);
+//});
 
-addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
+//addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
 
-window.addEventListener("load", autoSlide);
+//window.addEventListener("load", autoSlide);
 
 
 
