@@ -1,6 +1,32 @@
 'use strict';
 
 
+/**
+ * Date formatting
+ * 
+ * */
+//var tomorrowFormatted;
+//function getFormatted() {
+//    tomorrowFormatted = document.getElementById("tomorrowFormatted");
+//    tomorrowFormatted = 5;
+//}
+
+//document.addEventListener('DOMContentLoaded', function () {
+//    const dateField = document.getElementById('myDateField');
+
+//    // Get today's date
+//    const today = new Date();
+
+//    // Calculate tomorrow's date
+//    const tomorrow = new Date(today);
+//    tomorrow.setDate(today.getDate() + 1);
+
+//    // Format tomorrow's date as YYYY-MM-DD for the 'min' attribute
+//    const tomorrowFormatted = tomorrow.toISOString().split('T')[0];
+
+//    // Set the 'min' attribute
+//    dateField.setAttribute('min', tomorrowFormatted);
+//});
 
 /**
  * PRELOAD
