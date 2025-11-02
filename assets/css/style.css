@@ -1641,7 +1641,7 @@ textarea.input-field {
 
 .image-text {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px; /* space between image and text */
     width: 80%;
     margin: 0 auto;
