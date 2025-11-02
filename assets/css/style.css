@@ -1654,9 +1654,9 @@ textarea.input-field {
 }
 
     .image-text img {
-        width: 20%; /* adjust image size as needed */
+        width: 30vw; /* adjust image size as needed */
         object-fit: contain;
-        /*border-radius: 100px;*/ /* optional: smooth corners */
+        border-radius: 15vw;  /*optional: smooth corners  */
     }
 
 
