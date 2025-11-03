@@ -1122,13 +1122,16 @@ header.active .intro:is(:visible); .checkVisibility
     line-height: var(--lineHeight-4);
     font-size: var(--fontSize-body-3);
     max-width: 100%;
+
 }
 
 .image-text img {
-    width: 30vw; /* adjust image size as needed */
+    width: 70%; /* adjust image size as needed */
     object-fit: contain;
-    border-radius: 15vw; /*optional: smooth corners  */
+    max-width: 300px;
+    border-radius: 50%; /*optional: smooth corners  */
 }
+
 
 
 /*-----------------------------------*\
@@ -1662,17 +1665,6 @@ textarea.input-field {
 
   .about .contact-number { --fontSize-body-1: 2.4rem; }
 
-.image-text {
-    text-align: center;
-}
-
-.image-text img {
-    width: 60%;
-    max-width: 200px;
-    border-radius: 50%;
-}
-
-
 
   /**
    * MENU
@@ -1900,7 +1892,7 @@ textarea.input-field {
 
 
     /**
-   * ABOUT
+   * ABOUT - larger than 992px
    */
 
     .about .container {
@@ -1912,7 +1904,10 @@ textarea.input-field {
         flex-direction: row;
         text-align: center;
     }
-
+    .image-text img {
+        width: 25vw; /* adjust image size as needed */
+        object-fit: contain;
+    }
 
     /**
    * MENU
