@@ -1108,6 +1108,29 @@ header.active .intro:is(:visible); .checkVisibility
     margin-block-end: 40px;
 }
 
+
+.image-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px; /* space between image and text */
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--smoky-black-1);
+    font-family: var(--fontFamily-forum);
+    line-height: var(--lineHeight-4);
+    font-size: var(--fontSize-body-3);
+    max-width: 100%;
+}
+
+.image-text img {
+    width: 30vw; /* adjust image size as needed */
+    object-fit: contain;
+    border-radius: 15vw; /*optional: smooth corners  */
+}
+
+
 /*-----------------------------------*\
   #MENU
 \*-----------------------------------*/
@@ -1640,25 +1663,14 @@ textarea.input-field {
   .about .contact-number { --fontSize-body-1: 2.4rem; }
 
 .image-text {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* space between image and text */
-    width: 80%;
-    margin: 0 auto;
     text-align: center;
-    color: var(--smoky-black-1);
-    font-family: var(--fontFamily-forum);
-    line-height: var(--lineHeight-4);
-    font-size: var(--fontSize-body-3);
-    max-width: 100%;
 }
 
-    .image-text img {
-        width: 30vw; /* adjust image size as needed */
-        object-fit: contain;
-        border-radius: 15vw;  /*optional: smooth corners  */
-    }
-
+.image-text img {
+    width: 60%;
+    max-width: 200px;
+    border-radius: 50%;
+}
 
 
 
@@ -1781,8 +1793,6 @@ textarea.input-field {
     color: var(--black);
   }
 
-
-
   /**
    * ORDER
    */
@@ -1896,6 +1906,11 @@ textarea.input-field {
     .about .container {
         grid-template-columns: 0.7fr 1fr;
         gap: 30px;
+    }
+
+    .image-text {
+        flex-direction: row;
+        text-align: center;
     }
 
 
