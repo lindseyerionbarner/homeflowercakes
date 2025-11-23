@@ -1214,14 +1214,14 @@ header.active .intro:is(:visible); .checkVisibility
 }
 
 /*-----------------------------------*\
-  #DECOR
+  #GALLERY
 \*-----------------------------------*/
 
-.decor {
+.gallery {
     color: var(--smoky-black-3);
 }
 
-.decor .row {
+.gallery .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
@@ -1272,7 +1272,7 @@ header.active .intro:is(:visible); .checkVisibility
 }
 
 .pricing,
-.decor{
+.gallery{
     color: var(--smoky-black-1);
     font-family: var(--fontFamily-forum);
 }

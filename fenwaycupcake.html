@@ -127,27 +127,27 @@
           <section class="section order" aria-label="order-label" id="order">
               <div class="container">
                   <div class="form order-form bg-black-10">
-                      <form method="post" action="INSERT-HTML-HERE" class="form">
+                      <form method="post" action="https://script.google.com/macros/s/AKfycbxwbQQDCYVtc0OXxh4sp00RM_QWkRHTY1qrz4SVrPZRd8GDsE6_fQy3V-xtyqj11Jq_Fg/exec" class="form">
                           <h2 class="headline-2 text-center">December cupcakes</h2>
                           <h2 class="headline-1 text-center">sign up here</h2>
                           <p class="form-text text-center">
                               This holiday season, Homeflower Cakes is piloting a cupcake subscription program
-                              for our neighbors at Fenway Triangle.
+                              for our neighbors at Fenway Triangle!
                               <br />
 
                               <br />
                               We will be offering cupcake deliveries on the following dates: <br />
-                              Wednesday, Dec. 3rd - <em> spiced carrot (cream cheese frosting)</em><br />
-                              Thursday, Dec. 11th - <em> red velvet (cream cheese frosting)</em><br />
-                              Monday, Dec. 15th- <em> hazelnut cream (chocolate buttercream)</em><br />
-                              Tuesday, Dec. 30th- <em> vanilla orange curd (cinnamon buttercream)</em><br />
+                              <b> Wednesday, Dec. 3rd: </b> spiced carrot cake (cream cheese frosting)<br />
+                              <b>Thursday, Dec. 11th: </b> red velvet cake (cream cheese frosting)<br />
+                              <b>Monday, Dec. 15th:</b> hazelnut cream cake (chocolate buttercream)<br />
+                              <b>Tuesday, Dec. 30th:</b> vanilla orange curd cake (cinnamon buttercream)<br />
                               <br /> Cupcakes are $2.50 each. <br>If you would like to sign up, fill out the form below to
                               specify which days you would like to participate and how many cupcakes you would like to order! <br />
 
                               <!--Wednesday, December 3rd - Spice cake with pumpkin ganache filling and cream cheese frosting <br />
-        Thursday, December 11th - Red Velvet with cream cheese frosting <br />
-        Monday, December 15th - Hazelnut with hazelnut ganache filling and chocolate frosting <br />
-        Tuesday, December 30th - Chocolate chip butter cakes with chocolate filling and vanilla frosting <br />-->
+    Thursday, December 11th - Red Velvet with cream cheese frosting <br />
+    Monday, December 15th - Hazelnut with hazelnut ganache filling and chocolate frosting <br />
+    Tuesday, December 30th - Chocolate chip butter cakes with chocolate filling and vanilla frosting <br />-->
                               <br />
 
                           </p>
@@ -168,6 +168,7 @@
                               <div class="icon-wrapper">
                                   <p>Your building</p>
                                   <select name="building" class="input-field">
+                                      <option value="Select" disabled selected hidden>Select an option</option>
                                       <option value="180">180 Brookline</option>
                                       <option value="150">150 Brookline</option>
                                       <option value="1365">1365 Boylston</option>
@@ -175,7 +176,7 @@
                               </div>
                               <div class="icon-wrapper">
                                   <p>Your unit number</p>
-                                  <input type="tel" name="contact" placeholder="" required autocomplete="off" class="input-field">
+                                  <input type="text" name="unit" placeholder="" class="input-field">
                               </div>
                           </div>
 
@@ -183,14 +184,14 @@
 
                               <div class="icon-wrapper">
                                   <ion-icon name="dates" aria-hidden="true"></ion-icon>
-                                  <p>Dates participating (can select multiple)</p>
+                                  <p>Dates participating <br />(ctrl/cmd to select multiple)</p>
                                   <select name="event-time" class="input-field-multi" multiple>
                                       <option value="All dates" disabled selected hidden>Select an option</option>
                                       <option value="All">All dates</option>
-                                      <option value="Dec3">Dec. 3rd (spice cake)</option>
+                                      <option value="Dec3">Dec. 3rd (spiced carrot)</option>
                                       <option value="Dec11">Dec. 11th (red velvet)</option>
                                       <option value="Dec15">Dec. 15th (hazelnut chocolate)</option>
-                                      <option value="Dec30">Dec. 30th (chocolate chip)</option>
+                                      <option value="Dec30">Dec. 30th (vanilla orange curd)</option>
                                   </select>
                                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                               </div>
@@ -229,13 +230,14 @@
 
                       <h2 class="headline-2 text-center">Additional info and terms</h2>
                       <p class="form-text text-center">
-                          Payment for your entire subscription is required up front. We take venmo or cash.
+                          Payment for your entire subscription is needed up front. We accept Venmo, Zelle, or cash,
+                          and will send you payment instructions after form submission.
                           If you need to opt out of a delivery,
-                          you may request to do so 48 hours prior to delivery and we will refund you. <br />
+                          send us a message 48 hours prior to delivery and we will refund you. <br />
                           <br />
                           Deliveries will be made to your door between 7:30-8pm; we will message you with your
                           provided contact info when your order has arrived. Residents who do not want deliveries
-                          left at their door may opt to pick up outside our residence (Unit 1248) instead.
+                          left at their door may opt to pick up outside our unit in 1365 Boylston instead.
                           <br />
                           
 
@@ -267,38 +269,28 @@
           <ul class="footer-list">
 
               <li>
-                  <a href="#" class="label-2 footer-link hover-underline">Home</a>
+                  <a href="https://www.homeflowercakes.com/" class="label-2 footer-link hover-underline">Home</a>
               </li>
 
               <li>
-                  <a href="#menu" class="label-2 footer-link hover-underline">Menu</a>
-              </li>
-
-              <li>
-                  <a href="#pricing" class="label-2 footer-link hover-underline">Pricing</a>
-              </li>
-
-              <li>
-                  <a href="#allergen" class="label-2 footer-link hover-underline">Allergen information</a>
+                  <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
               </li>
 
           </ul>
 
-        <ul class="footer-list">
+          <ul class="footer-list">
 
-            <li>
-                <a href="https://www.instagram.com/homeflower.cakes/" class="label-2 footer-link hover-underline">Instagram</a>
-            </li>
 
-            <li>
-                <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
-            </li>
 
-            <li>
-                <a href="mailto:homeflower.cakes@gmail.com" class="label-2 footer-link hover-underline">Contact</a>
-            </li>
+              <li>
+                  <a href="mailto:homeflower.cakes@gmail.com" class="label-2 footer-link hover-underline">Contact</a>
+              </li>
 
-        </ul>
+              <li>
+                  <a href="https://www.instagram.com/homeflower.cakes/" class="label-2 footer-link hover-underline">Instagram</a>
+              </li>
+
+          </ul>
 
       </div>
 
