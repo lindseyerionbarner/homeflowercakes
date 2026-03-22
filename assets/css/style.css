@@ -1221,13 +1221,14 @@ header.active .intro:is(:visible); .checkVisibility
     color: var(--smoky-black-3);
 }
 
-.gallery .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: center;
-    margin: 0 auto;
-}
+    .gallery .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        max-width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
 /* Create two equal columns that sits next to each other */
 .column {
@@ -1238,12 +1239,77 @@ header.active .intro:is(:visible); .checkVisibility
     color: var(--smoky-black-3);
     line-height: 20px;
 }
-
+/*
 .column img {
     margin-top: 0px;
     width: 33vw;
     vertical-align: middle;
 }
+*/
+
+.gallery-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--pink-greige-1);
+    opacity: 0%; /* invisible until user hovers*/}
+
+.gallery-card {
+    overflow: hidden;}
+
+.gallery-card .has-before {
+    padding-block: 30px;
+    margin-block-end: 26px;
+    z-index: 1;
+}
+
+.gallery-card .has-before::before {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 100%;
+    /*    background-image: url('../images/img-pattern.svg');*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    transition: var(--transition-2);
+    transition-delay: 0;
+    z-index: -1;
+    will-change: transform;
+}
+
+    .gallery-card .card-banner {
+        transition: var(--transition-2);
+    }
+
+    /* This is the image transformation when hovering*/
+    .gallery-card:is(:hover, :focus-within) .card-banner {
+        transform: scale(1.05);
+    }
+
+    /* Applies to the decor-overlay text when hovering*/
+    .gallery-card:is(:hover, :focus-within) .img-cover {
+        opacity: 50%;
+    }
+
+    /* Applies to the decor-overlay text when hovering*/
+    .gallery-card:is(:hover, :focus-within) .gallery-overlay {
+        opacity: 100%;
+    }
+
+    /* I think this is the shiny thing that goes across the image*/
+    .gallery-card .hover\:shine::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+        transform: skewX(-0.08turn) translateX(-180%);
+    }
 
 
 /*-----------------------------------*\
