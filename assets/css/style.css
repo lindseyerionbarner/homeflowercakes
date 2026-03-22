@@ -66,6 +66,7 @@
     --fontSize-body-2: 1.6rem;
     --fontSize-body-3: 1.8rem;
     --fontSize-body-4: 1.6rem;
+    --fontSize-body-5: calc(2vw);
     --fontSize-label-1: 1.4rem;
     --fontSize-label-2: 1.2rem;
     /* font-weight */
@@ -1221,14 +1222,14 @@ header.active .intro:is(:visible); .checkVisibility
     color: var(--smoky-black-3);
 }
 
-    .gallery .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-        max-width: 80%;
-        justify-content: center;
-        margin: 0 auto;
-    }
+.gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    max-width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
 
 /* Create two equal columns that sits next to each other */
 .column {
@@ -1253,10 +1254,14 @@ header.active .intro:is(:visible); .checkVisibility
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--pink-greige-1);
-    opacity: 0%; /* invisible until user hovers*/}
+    opacity: 0%; /* invisible until user hovers*/
+    font-size: var(--fontSize-body-5);
+    line-height: var(--lineHeight-4);
+}
 
 .gallery-card {
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 .gallery-card .has-before {
     padding-block: 30px;
