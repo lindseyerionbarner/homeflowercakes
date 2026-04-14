@@ -104,6 +104,24 @@ window.addEventListener("scroll", function () {
   }
 });
 
+/**
+ * ORDER FORM
+ */
+
+const disabledDates = [
+    "2026-04-17",
+    "2026-04-18",
+    "2026-04-19",
+];
+
+const input = document.querySelector('input[name="event-date"]');
+
+input.addEventListener('input', function () {
+    if (disabledDates.includes(this.value)) {
+        alert("We are very sorry, but the date you selected (" + this.value + ") is not available for booking.");
+        this.value = "";
+    }
+});
 
 
 /**
