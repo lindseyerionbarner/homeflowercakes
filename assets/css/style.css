@@ -66,7 +66,7 @@
     --fontSize-body-2: 1.6rem;
     --fontSize-body-3: 1.8rem;
     --fontSize-body-4: 1.6rem;
-    --fontSize-body-5: calc(2vw);
+    --fontSize-body-5: 1.6rem;
     --fontSize-label-1: 1.4rem;
     --fontSize-label-2: 1.2rem;
     /* font-weight */
@@ -1226,7 +1226,7 @@ header.active .intro:is(:visible); .checkVisibility
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-    max-width: 80%;
+    max-width: 99%;
     justify-content: center;
     margin: 0 auto;
 }
@@ -1256,7 +1256,7 @@ header.active .intro:is(:visible); .checkVisibility
     color: var(--pink-greige-1);
     opacity: 0%; /* invisible until user hovers*/
     font-size: var(--fontSize-body-5);
-    line-height: var(--lineHeight-4);
+/*    line-height: var(--lineHeight-4);*/
 }
 
 .gallery-card {
@@ -1264,8 +1264,8 @@ header.active .intro:is(:visible); .checkVisibility
 }
 
 .gallery-card .has-before {
-    padding-block: 30px;
-    margin-block-end: 26px;
+    padding-block: 3px;
+    margin-block-end: 2px;
     z-index: 1;
 }
 
